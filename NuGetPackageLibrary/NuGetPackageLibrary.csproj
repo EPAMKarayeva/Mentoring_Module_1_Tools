@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>NuGetPackageTestLibrary</PackageId>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="app.config.install.xdt" />
+    <None Remove="app.config.uninstall.xdt" />
+    <None Remove="readme.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="app.config.install.xdt" />
+    <Content Include="app.config.uninstall.xdt" />
+    <Content Include="readme.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="4.7.2" />
+    <PackageReference Include="NLog.Config" Version="4.7.2" />
+    <PackageReference Include="NLog.Schema" Version="4.7.2" />
+  </ItemGroup>
+
+</Project>
